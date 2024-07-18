@@ -25,3 +25,25 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Tutorial
+
+### 1- components in angular
+### 2- updating-the-component-class
+
+### 3- Composing Components
+ 
+ `<app-user/>`
+
+ ###  control flow in components
+
+ - 4- @if  , @else
+ - 5- @for
+
+ ### 6- Property Binding in Angular
+ ### 7- Event handling
+ ### 8- Component Communication with @Input
+ ### 9- Component Communication with @Output
+ ### 10- deferrable-views
+ ### 11- Optimizing images
