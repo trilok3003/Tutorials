@@ -47,3 +47,23 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
  ### 9- Component Communication with @Output
  ### 10- deferrable-views
  ### 11- Optimizing images
+ ### 12- Routing Overview
+ ### 13- Define a Route
+ ### 14- Use RouterLink for Navigation
+ ### 15- Forms Overview
+ ### 16- Getting form control value
+ ### 17- Reactive Forms
+ ### 18- Validating forms
+ ### 19- Creating an injectable service
+ ### 20- Inject-based dependency injection
+ ### 21- Constructor-based dependency injection
+ ### 22- Pipes
+ ### 23- Formatting data with pipes
+ ### 24- Create a custom pipe
+
+
+ # Explore 
+ 1. [What Is Angular ?](https://angular.dev/overview)
+ 2. [Angular's Roadmap](https://angular.dev/roadmap)
+ 3. [Playground](https://angular.dev/playground)
+ 4. [Youtube Course](https://youtube.com/playlist?list=PL1w1q3fL4pmj9k1FrJ3Pe91EPub2_h4jF)

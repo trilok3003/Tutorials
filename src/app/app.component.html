@@ -1,46 +1,39 @@
-<h1>
-  Hello {{title}}
-</h1>
+<h1>Hello {{ title }}</h1>
 <section>
   <app-user></app-user>
   <!-- Composing Components -->
-  <app-user/>
+  <app-user />
 </section>
 
 <section>
   @if (isLoggedIn) {
-    <p>Welcome User !</p>
+  <p>Welcome User !</p>
   }
 </section>
 <section>
   @if (isServerRunning) {
-    <p>Yes, Server is running</p>
-  }
-  @else {
-    <p>No, Server is not running</p>
+  <p>Yes, Server is running</p>
+  } @else {
+  <p>No, Server is not running</p>
   }
 </section>
 <section>
   <ul>
     @for (os of operatingSystems; track os.id) {
-     <li>
-      {{os.name}}
-     </li>
+    <li>
+      {{ os.name }}
+    </li>
     }
   </ul>
-
-  
 </section>
 <section>
   <ul>
     @for (user of users; track user.id) {
-     <li>
-      {{user.name}}
-     </li>
+    <li>
+      {{ user.name }}
+    </li>
     }
   </ul>
-
-  
 </section>
 <section>
   <div [contentEditable]="isEditable">Edit</div>
@@ -49,16 +42,86 @@
   <button (click)="greet()">greet</button>
 </section>
 <section>
-  <app-user occupation="Angular Developer" (incrementCountEvent)="onIncrementCountEvent($event)"></app-user>
+  <app-user
+    occupation="Angular Developer"
+    (incrementCountEvent)="onIncrementCountEvent($event)"
+  ></app-user>
 </section>
 <section>
-  @defer(on viewport)  {
-    <app-comments></app-comments>
+  @defer(on viewport) {
+  <app-comments></app-comments>
+  } @placeholder {
+  <p>Future comments</p>
+  } @loading(minimum 2s) {
+  <p>Loading comments...</p>
   }
-  @placeholder {
-    <p>Future comments</p>
-  }
-  @loading(minimum 2s) {
-    <p>Loading comments...</p>
-  }
+</section>
+<section>
+  <ul>
+    <li>
+      Static Image:
+      <img ngSrc="/assets/logo.svg" alt="Angular logo" width="32" height="32" />
+    </li>
+    <li>
+      Dyanamic Image:
+      <img [ngSrc]="logoUrl" [alt]="logoAlt" width="32" height="32" />
+    </li>
+  </ul>
+  <div class="image-container">
+    /
+    <img ngSrc="/assets/logo.svg" fill />
+  </div>
+  <img ngSrc="/assets/logo.svg" height="600" width="800" priority />
+</section>
+
+<section>
+  navigation href for small app:
+  <nav>
+    <a href="/">Home</a>
+    |
+    <a href="/user">User</a>
+  </nav>
+  <router-outlet />
+</section>
+
+<section>
+  navigation routerlin for large app:
+  <nav>
+    <a routerLink="/">Home</a>
+    |
+    <a routerLink="/user">User</a>
+  </nav>
+  <router-outlet />
+</section>
+<section>
+  <label for="framework">
+    Favorite Framework: {{ favoriteFramework }}
+    <input id="framework" type="text" [(ngModel)]="favoriteFramework" />
+  </label>
+</section>
+<section>
+  <h2>Profile Form</h2>
+  <p>Name: {{ profileForm.value.name }}</p>
+  <p>Email: {{ profileForm.value.email }}</p>
+  <form [formGroup]="profileForm" (ngSubmit)="handleSubmit()">
+    <label>
+      Name
+      <input type="text" formControlName="name" />
+    </label>
+    <label>
+      Email
+      <input type="email" formControlName="email" />
+    </label>
+    <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+  </form>
+</section>
+<section>
+  <p>user list: {{userList}}</p>
+</section>
+<section>
+  <h1>{{msg | uppercase}}</h1>
+</section>
+<section>
+  {{birthday | date: 'medium'}}
+  {{word | star}}
 </section>

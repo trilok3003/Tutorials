@@ -1,3 +1,6 @@
-:host{
-    color: blueviolet;
+:host {
+  color: blueviolet;
+}
+.image-container {
+  position: relative;
 }
