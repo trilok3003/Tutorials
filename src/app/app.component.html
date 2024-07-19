@@ -1,4 +1,6 @@
+<section>
 <h1>Hello {{ title }}</h1>
+</section>
 <section>
   <app-user></app-user>
   <!-- Composing Components -->
@@ -116,12 +118,12 @@
   </form>
 </section>
 <section>
-  <p>user list: {{userList}}</p>
+  <p>user list: {{ userList }}</p>
 </section>
 <section>
-  <h1>{{msg | uppercase}}</h1>
+  <h1>{{ msg | uppercase }}</h1>
 </section>
 <section>
-  {{birthday | date: 'medium'}}
-  {{word | star}}
+  {{ birthday | date : "medium" }}
+  {{ word | star }}
 </section>
