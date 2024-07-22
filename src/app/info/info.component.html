@@ -1,5 +1,8 @@
 <p>info works!</p>
 
+<button (click)="onSubscribe()" *ngIf="!isSubscribed">Subscribe</button>
+<button  [disabled]="isSubscribed" *ngIf="isSubscribed">Subscribed</button>
+
 
 
 <div>

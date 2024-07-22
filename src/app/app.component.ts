@@ -12,4 +12,11 @@ import { GradeDirective } from './grade.directive';
 })
 export class AppComponent {
   title = 'angular-17';
+  isSubscribed  = false;
+  subscribeText = "Subscribe"
+
+  onSubscribe() {
+    this.isSubscribed = true;
+    this.subscribeText = "Subscribed"
+  }
 }

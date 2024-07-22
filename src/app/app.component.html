@@ -16,5 +16,8 @@
   {{ 30 | grade }}
 </p>
 
+<div>
+  <button (click)="onSubscribe()" [disabled]="isSubscribed">{{ subscribeText }}</button>
+</div>
 
-<router-outlet/>
+<router-outlet />
