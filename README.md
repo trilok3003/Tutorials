@@ -25,3 +25,21 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+# Testing Tutorial Stories
+
+1. Testing services
+2. Spy is used for calling actual function or not .
+3. createSpyObj
+4. beforeEach (removing duplicate code)
+5. TESTBED utility is used for not create instance menualy [used dependency injection]
+6. http service 
+7. component
+8. dom
+9. asynchronus
+10. promise
+11. pipes
+12. directives
+13. routing
+14. code coverage
