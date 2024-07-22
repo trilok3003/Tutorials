@@ -28,17 +28,26 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # Testing Tutorial Stories
 
-1. Testing services
-2. Spy is used for calling actual function or not .
+1. -[x] Testing services
+2. -[x] [Spy/spyOn/createSpyObject] Spy is used for calling actual function or not .
 3. createSpyObj
-4. beforeEach (removing duplicate code)
-5. TESTBED utility is used for not create instance menualy [used dependency injection]
-6. http service
-7. component
+4. -[x] beforeEach (removing duplicate code)
+5. -[x] TESTBED utility is used for not create instance menualy [used dependency injection]
+6. -[x] http service
+7. - [x] component
 8. - [x] dom interaction
 9. - [x] asynchronus
 10. - [x] promise / observable
 11. - [x] pipes
 12. - [x] directives
 13. - [x] routing
-14. code coverage
+14. -[x] code coverage
+
+# Unit Testing
+
+- A Software Developement Process
+- Individual units are tested
+- Code Quality
+- Saves times and money
+- Better code more efficiently
+- Developers do unit testing
