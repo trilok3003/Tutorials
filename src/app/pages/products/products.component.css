@@ -1,0 +1,53 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7rem;
+  justify-content: center;
+  align-items: center;
+
+  padding: 3rem;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+.search {
+  display: flex;
+  background-color: lightslategray;
+  height: 50px;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  > input {
+    width: 350px;
+    border-radius: 5px;
+    border: 0.1px;
+    font-size: 30px;
+    padding: 0.2rem;
+  }
+}
+.favorites {
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+  
+    > img {
+      height: 40px;
+    }
+  }
+@media (max-width: 768px) {
+  .products {
+    gap: 3rem;
+    padding: 1.5rem;
+  }
+  .search{
+    > input{
+      width: 100%;
+    }
+  }
+}

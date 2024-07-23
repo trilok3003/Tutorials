@@ -1,0 +1,35 @@
+<div class="search">
+  <h3>Search</h3>
+  <input #filter (input)="updateFilter(filter.value)" />
+</div>
+<div class="favorites">
+  @for (product of favorites(); track product.id) {
+  <img [src]="product.image" kendoCardMedia alt="cover_img" />
+  }
+  <button (click)="clearFavorites()">🗑</button>
+</div>
+@if (!filterProducts()) {
+<div>loading...</div>
+} @else {
+<section class="products">
+  @for (product of filterProducts();track product.id) {
+
+  <kendo-card width="360px">
+    <img [src]="product.image" kendoCardMedia alt="cover_img" />
+    <kendo-card-body>
+      <h4>{{ product.title }}</h4>
+      <hr kendoCardSeparator />
+      <p>
+        {{ product.description }}
+      </p>
+    </kendo-card-body>
+    <kendo-card-footer class="k-hstack">
+      <span>Price {{ product.price | currency }}</span>
+      <span (click)="addFavorite(product)">❤</span>
+    </kendo-card-footer>
+  </kendo-card>
+  } @empty {
+  <h2>No products! 😌</h2>
+  }
+</section>
+}
