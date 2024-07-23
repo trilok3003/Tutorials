@@ -1,0 +1,14 @@
+<div class="course-container">
+    <div class="course-thumbnail">
+      <img [src]="course().image"/>
+      <div class="course-status">
+        New
+      </div>
+    </div>
+    <ng-content></ng-content>
+    <h3 class="title">{{course().title}}</h3>
+    <div class="course-footer">
+      <span>🕧 {{course().timeSpan}}</span>
+      <span>{{course().rank}} ⭐</span>
+    </div>
+  </div>
