@@ -5,11 +5,16 @@ import { CurrencyPipe } from '@angular/common';
 import {CardModule} from "@progress/kendo-angular-layout";
 import { toSignal } from '@angular/core/rxjs-interop';
 
+import { IndicatorsModule } from '@progress/kendo-angular-indicators';
+
+
 @Component({
   selector: 'app-products',
   standalone: true,
   imports: [
-    CardModule, CurrencyPipe
+    CardModule, 
+    CurrencyPipe,
+    IndicatorsModule
   ],
   templateUrl: './products.component.html',
   styleUrl: './products.component.css'

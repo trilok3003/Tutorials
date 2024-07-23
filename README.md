@@ -28,3 +28,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # ref
 https://github.com/danywalls
+
+# improve performance
+
+- step 1: lazyloading
+- step 2: Deferrable Views (oad of components and dependencies, like child components, directives, pipes and CSS.)
+    Defer views work with triggers, prefeching, and sub-blocks like placeholder, loading and error. 

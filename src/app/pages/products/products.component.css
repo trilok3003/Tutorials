@@ -31,22 +31,29 @@
   }
 }
 .favorites {
-    justify-content: center;
-    display: flex;
-    gap: 1rem;
-    padding: 1rem;
-  
-    > img {
-      height: 40px;
-    }
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+
+  > img {
+    height: 40px;
   }
+}
+.loading-area {
+  width: 350px;
+  height: 350px;
+  opacity: 0.5;
+  border-radius: 5px;
+  background-color: lightblue;
+}
 @media (max-width: 768px) {
   .products {
     gap: 3rem;
     padding: 1.5rem;
   }
-  .search{
-    > input{
+  .search {
+    > input {
       width: 100%;
     }
   }
