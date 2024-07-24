@@ -25,3 +25,57 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+# structuring angular projects
+
+* Root module
+* Core module
+* Feature modules
+* Share module
+
+## The Root Module
+
+> The root module takes responsibility for loading all other modules in your app. When you start a new project, Angular creates the app.module into the src/app; it works as your root module.
+
+
+## The Core Module
+
+> The core module provides root-scoped singleton services and models used in the whole application and doesn’t have any relation to feature modules.
+
+ - constants
+ - guards
+ - interceptors
+ - models
+
+
+## Feature Modules
+
+> The feature modules contain an application feature—for example, payment, purchase or teams. Each module has components, directives, pipes, pages and interfaces required by the module, creating each as a block.
+
+> The feature module makes your code self-contained, independent and with a single responsibility focused on specific features.
+
+ - module 1
+   - components
+   - directives
+   - pipes
+   - pages
+ - module 2
+ - module 3  
+
+
+
+## Shared Modules
+
+> The share module doesn’t relate to a feature; it lists reusable services, components, pipes or directives used in other feature modules.
+
+- components
+- pipes
+- directives
+- service
+
+
+
+## ref
+
+[read me](https://www.telerik.com/blogs/angular-basics-tips-structuring-angular-project)
