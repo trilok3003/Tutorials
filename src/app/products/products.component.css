@@ -1,0 +1,8 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    > div{
+      border-bottom: 2px solid green;
+    }
+}
