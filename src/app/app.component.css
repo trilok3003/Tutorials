@@ -1,0 +1,50 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.items {
+  display: flex;
+}
+
+button {
+  background-color: rgb(59, 114, 235);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  margin: 1rem;
+}
+.loading {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading .loader {
+  position: relative;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* background-color: white; */
+  border: 10px solid grey;
+  border-top-color: lightgreen;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
