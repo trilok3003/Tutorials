@@ -25,3 +25,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# troubleshooting
+
+[read](https://www.telerik.com/blogs/angular-basics-troubleshooting-cannot-read-property-undefined-error)
+[read 2](https://www.telerik.com/blogs/angular-basics-troubleshooting-unknown-element-errors)
