@@ -1,0 +1,6 @@
+:host {
+    display: grid;
+    grid-template-columns: 20em 1fr;
+    min-height: 100vh;
+  }
+  

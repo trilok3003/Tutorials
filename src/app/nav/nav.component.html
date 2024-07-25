@@ -1,0 +1,15 @@
+<nav [class.visible]="isVisible()">
+    <ul>
+      <li *ngFor="let link of links">
+        <a
+          [routerLink]="link.path"
+          (click)="isVisible.set(false)">
+          {{ link.label }}
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <button (click)="isVisible.set(!isVisible())">
+    {{ isVisible() ? 'Hide Menu' : 'Show Menu' }}
+  </button>
+  

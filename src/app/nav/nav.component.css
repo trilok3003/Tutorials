@@ -1,0 +1,52 @@
+:host {
+  display: flex;
+}
+
+nav {
+  --size: 14em;
+  background-color: #6244b0;
+  min-width: var(--size);
+  transition: translate 0.15s ease-in;
+  width: var(--size);
+}
+
+.visible {
+  translate: -110% 0;
+  filter: drop-shadow(0 0 0.5rem rgba(black, 0.5));
+
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 2.5em 0.5em 2em 2em;
+}
+
+li {
+  margin-block: 1.75em;
+}
+
+a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
+  position: relative;
+  transition: scale 0.15s ease-in;
+  transform-origin: left center;
+
+  &:hover {
+    text-decoration: underline;
+    scale: 1.25;
+  }
+
+  &.active::after {
+    background-color: currentColor;
+    content: "";
+    inset: -0.25em -0.5em -0.25em -0.5em;
+    opacity: 0.2;
+    position: absolute;
+  }
+}
