@@ -25,3 +25,38 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+# Angular best practice for projects
+
+> Use Ahead-of-Time (AOT) Compilation
+
+>  Use Lazy Loading
+
+> Minimize the Use of @Input and @Output (beause  tightly coupled and difficult-to-maintain codebase)
+
+> Use OnPush Change Detection
+
+> Use a Production-Ready Build
+
+> Modular Architecture  (Modular architecture allows for better organization and maintainability of the codebase. With modular architecture, functionality is organized into individual feature modules and shared modules)
+
+> Linting (TSLint and ESLint.)
+
+> Keeping the Project and Dependencies Up to Date
+
+
+# Angular best practice for components
+
+> Naming Conventions
+
+> Reusability
+
+> Single Responsibility Principle
+
+>  Communication Between Components (Property binding, Event binding, Services, ngrx/store)
+
+> State Management
+
+> Testing
+
