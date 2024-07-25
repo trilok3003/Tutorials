@@ -25,3 +25,26 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+# Angular Cli
+
+>  Start with the Essentials `ng new my-project --minimal` 
+
+> Keep Your Code Clean and Consistent `ng lint`
+
+>  Enhance Your Style Sheets with Sass `ng new my-sassy-app --style=scss`
+
+>  Optimize Your Code for Production `ng build --prod`
+
+> Use ng generate to Save Time and Avoid Errors  `ng generate`
+
+>  Enhance Your App with Ease with ng add ` ng add`   It automates the installation and configuration process
+
+> Work Faster and Smarter with Shortcuts `ng g s`  `ng g m` `ng g d` `ng g p`
+
+> Share Your Code Across Projects `ng generate library`
+
+> Store Info About the Build Process to Keep Your App Running Smoothly  `    ng build --stats-json  ` and use tool webpack-bundle-analyze
+
+> Ensure Your Code Works as Expected `ng test`
