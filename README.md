@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+# Reactive Forms
+
+- Reactive forms objects are objects that provide us with synchronous access to form value data
+
+- They’re built from observables, so input values and the data value that they bind to are synchronous. Each change in a form state returns a new state.
+
+- This is different from template-driven forms since changes are asynchronous in template-driven forms.
+
+- The synchronous nature of reactive forms makes testing reactive forms easier than template-driven forms.
+
+- the syntax of template-driven forms is closer to Angular.js forms.
