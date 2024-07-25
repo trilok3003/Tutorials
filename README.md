@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# let (local component template variable with let)
+
+[read meore](https://itnext.io/angular-tutorial-local-component-template-variables-with-let-0a23edd144d9)
