@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    color: #6244b0;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
