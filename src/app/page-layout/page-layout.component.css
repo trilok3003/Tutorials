@@ -1,0 +1,7 @@
+:host {
+    flex: 1;
+    padding: 2em 3em;
+    max-width: 50em;
+    position: relative;
+  }
+  
