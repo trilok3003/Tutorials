@@ -1,0 +1,9 @@
+<div>
+    @if (user.status === 'loggedIn') {
+    <div>Hello, {{ user.name }}! Great to see you again.</div>
+    } @else if (user.status === 'loggedOut') {
+    <div>Welcome, guest. Please sign in.</div>
+    } @else {
+    <div>Could not determine user status. Please try reloading the page.</div>
+    }
+  </div>

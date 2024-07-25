@@ -1,0 +1,10 @@
+<div>
+    <ul>
+      @for (task of tasks; track task.id) {
+      <li>{{ task.name }} - {{ task.status }}</li>
+      }
+      @empty {
+        <li>No tasks available</li>
+      }
+    </ul>
+  </div>

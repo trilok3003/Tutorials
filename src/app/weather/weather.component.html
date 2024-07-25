@@ -1,0 +1,16 @@
+<div>
+    @switch (weather.condition) {
+      @case ("sunny") {
+        <div>It's a bright sunny day!</div> 
+      }
+      @case ("rainy") {
+        <div>Don't forget your umbrella. It's raining outside!</div> 
+      }
+      @case ("cloudy") {
+        <div>The sky is covered with clouds today.</div>
+      }
+      @default {
+        <div>Weather information not available.</div> 
+      }
+    }
+  </div>
