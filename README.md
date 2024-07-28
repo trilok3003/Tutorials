@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# Tips For Updating Angular
+
+1. Tip 1: Follow the Angular Update Guide
+2. Tip 2: Read Instruction Section Carefully in the the Angular Update Guide
+3. Tip 3: Use Version Control in angular project
+4. Tip 4: Write and Run Unit Tests to Make Sure Our Code is Still Running After Updates
+5. Tip 5: Check Our Version of Angular Before Updating
+6. Tip 6: Learn About New Features
+7. Tip 7: Find the Current Version of Angular Before Updating
+8. Tip 8: Write End-to-End Tests to Help Test Our Code Like a User Would
+9. Tip 9: Use the ‘ng update’ Command to Perform Simple Updates
+10. Tip 10: Make Sure Angular CLI Is Updated
