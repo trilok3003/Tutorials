@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ItemComponent } from "./item/item.component";
 
@@ -11,7 +11,7 @@ import { ItemComponent } from "./item/item.component";
 })
 export class AppComponent {
   title = 'angular-17';
-  step1Complete = false; // signal(false);
-  step2Complete = false; // signal(false);
-  step3Complete = false; // signal(false);
+  step1Complete = signal(false);
+  step2Complete =  signal(false);
+  step3Complete = signal(false);
 }

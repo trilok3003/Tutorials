@@ -1,13 +1,17 @@
-import { Component, HostBinding, Input } from '@angular/core';
+import { Component, effect, HostBinding, input, Input } from '@angular/core';
 
 @Component({
   selector: 'app-item',
   standalone: true,
   imports: [],
   templateUrl: './item.component.html',
-  styleUrl: './item.component.css'
+  styleUrl: './item.component.css',
 })
 export class ItemComponent {
-  @Input({ required: true }) step!: number;
-  @Input() @HostBinding('class.complete') isComplete = false;
+  step = input.required<number>();
+  isComplete = input(false);
+  @HostBinding('class.complete') hasCompleteClass = false;
+  constructor() {
+    effect(() => (this.hasCompleteClass = this.isComplete()));
+  }
 }

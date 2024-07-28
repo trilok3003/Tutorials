@@ -1,23 +1,23 @@
-<app-item [step]="1" [isComplete]="step1Complete">
+<app-item [step]="1" [isComplete]="step1Complete()">
   First, do something...
-  <button (click)="step1Complete = true">
-    {{ step1Complete ? 'Finished!' : 'Complete Step' }}
+  <button (click)="step1Complete.set(!step1Complete())">
+    {{ step1Complete() ? 'Finished!' : 'Complete Step' }}
   </button>
 </app-item>
-<app-item [step]="2" [isComplete]="step2Complete">
+<app-item [step]="2" [isComplete]="step2Complete()">
   Next, do something else...
-  <button (click)="step2Complete = true">
-    {{ step3Complete ? 'Finished!' : 'Complete Step' }}
+  <button (click)="step2Complete.set(!step2Complete())">
+    {{ step2Complete() ? 'Finished!' : 'Complete Step' }}
   </button>
 </app-item>
-<app-item [step]="3" [isComplete]="step3Complete">
+<app-item [step]="3" [isComplete]="step3Complete()">
   After that, you're finished...
-  <button (click)="step3Complete = true">
-    {{ step3Complete ? 'Finished!' : 'Complete Step' }}
+  <button (click)="step3Complete.set(!step3Complete())">
+    {{ step3Complete() ? 'Finished!' : 'Complete Step' }}
   </button>
 </app-item>
 
-<div [class.visible]="step1Complete && step2Complete && step3Complete" class="success">
+<div [class.visible]="step1Complete() && step2Complete() && step3Complete()" class="success">
   <h2>Thank You!</h2>
   All steps have been completed
 </div>
