@@ -1,7 +1,7 @@
-@use 'assets/scss//main.scss';
+@use 'assets/scss/main.scss';
 // @import "~bootstrap/scss/bootstrap";
 // @import "~bootstrap/scss/bootstrap";
 
 body{
-    background-color: red;
+    background-color: lighten($color: #000000, $amount: 90)
 }
