@@ -35,9 +35,12 @@ export class DataListComponent {
         }
       );
   }
-  onPageChange(page: number): void {
-    this.currentPage = page;
+  paginationChange(event: any) {
+    let { currentPage, itemsPerPage } = event;
+    this.currentPage = currentPage;
+    this.itemsPerPage = itemsPerPage;
     this.fetchData();
+    // this.fetchData();
   }
   // goToPreviousPage(): void {
   //   if (this.currentPage > 1) {

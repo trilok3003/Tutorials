@@ -13,7 +13,9 @@ export class PaginationComponent {
   @Input() currentPage: number;
   @Input() itemsPerPage: number;
   @Input() totalItems: number;
-  @Output() pageChanged: EventEmitter<number> = new EventEmitter();
+  @Output() paginationChanged: EventEmitter<object> = new EventEmitter();
+
+  pageSizes = [5, 10, 20]
   get totalPages(): number {
     return Math.ceil(this.totalItems / this.itemsPerPage);
   }
@@ -23,12 +25,19 @@ export class PaginationComponent {
   changePage(page: number): void {
     if (page >= 1 && page <= this.totalPages) {
       this.currentPage = page;
-      this.pageChanged.emit(page);
+    this.changePagination();
     }
   }
 
   goToPage(page: string): void {
     const pageNumber = parseInt(page, 10);
     this.changePage(pageNumber);
+  }
+  changePageSize() {
+    this.currentPage = 1;
+    this.changePagination();
+  }
+  changePagination() {
+    this.paginationChanged.emit({itemsPerPage: this.itemsPerPage, currentPage: this.currentPage});
   }
 }

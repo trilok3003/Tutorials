@@ -1,9 +1,12 @@
 <div class="pagination">
+  <select  [(ngModel)]="itemsPerPage" (ngModelChange)="changePageSize()">
+    <option *ngFor="let pageSize of pageSizes" [value]="pageSize">{{ pageSize }}</option>
+  </select>
     <button (click)="changePage(currentPage - 1)" [disabled]="currentPage === 1">Previous</button>
     <span>Page {{ currentPage }} of {{ totalPages }}</span>
     <button (click)="changePage(currentPage + 1)" [disabled]="currentPage === totalPages">Next</button>
 
-    <select  [(ngModel)]="currentPage">
+    <select  [(ngModel)]="currentPage" (ngModelChange)="changePage(currentPage)">
         <option *ngFor="let page of pageNumbers" [value]="page">{{ page }}</option>
       </select>
     <button (click)="changePage(1)" [disabled]="currentPage === 1">Go to First</button>
