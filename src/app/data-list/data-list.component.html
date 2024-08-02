@@ -1,0 +1,17 @@
+<div class="data-list">
+    <div *ngFor="let item of paginatedData; trackBy: trackByFn">{{ item.email }}</div>
+  </div>
+  <app-pagination
+  [currentPage]="currentPage"
+  [itemsPerPage]="itemsPerPage"
+  [totalItems]="totalItems"
+  (pageChanged)="onPageChange($event)"
+  ></app-pagination>
+
+  <!-- <div class="pagination-controls">
+    <button (click)="goToPreviousPage()" [disabled]="currentPage === 1">Previous</button>
+    <button (click)="goToNextPage()" [disabled]="currentPage === totalPages">Next</button>
+    <select (change)="goToPage(el.value)" #el>
+      <option *ngFor="let page of pageNumbers" [value]="page">{{ page }}</option>
+    </select>
+  </div> -->

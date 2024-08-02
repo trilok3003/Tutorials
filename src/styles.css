@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightslategray;
+    padding: 1rem
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    &:disabled{
+        cursor: not-allowed;
+    }
+}
+
+select{
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+}
