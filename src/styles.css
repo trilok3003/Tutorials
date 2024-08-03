@@ -1,1 +1,217 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --x: 0 0 #0000;
+  --s1: ;
+  --s2: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --s3: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --s4: 0 4px 6px -1px rgb(0 0 0 / .1), 0 2px 4px -2px rgb(0 0 0 / .1);
+
+  --box-shadow: var(--x), var(--x), 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --box-shadow-2: var(--x), var(--x), var(--s2);
+  --box-shadow-3: var(--x), var(--x), var(--s3);
+  --box-shadow-4: var(--x), var(--x), var(--s4);
+
+
+  --color-white: #fff;
+  --color-light: #f2f2f2;
+  --color-dark: #e3e3e8;
+}
+body {
+  background-color: var(--color-dark);
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(
+    135deg,
+    oklch(53.18% 0.28 296.97) 0%,
+    oklch(59.91% 0.239 8.14) 100%
+  );
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+}
+nav {
+  box-shadow: var(--box-shadow);
+  padding: 1.25rem 1rem;
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-white);
+  }
+  h2{
+    margin: 0;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-box {
+  box-shadow: var(--box-shadow);
+  background-color: var(--color-light);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  height: 16rem;
+
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.header-box-item {
+  box-shadow: var(--box-shadow);
+  background-color: var(--color-dark);
+  border-radius: 1rem;
+  padding: 1rem;
+
+  flex: 1;
+  display: flex;
+}
+
+main {
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  background-color: var(--color-light);
+  border-radius: 0.5rem;
+  height: 100%;
+
+  position: relative;
+  top: -2.5rem;
+
+  display: grid;
+  gap: 2rem;
+}
+.card {
+  padding: 4rem;
+  background-color: var(--color-white);
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.card-light {
+  background-color: var(--color-light);
+}
+.card-dark {
+  background-color: var(--color-dark);
+}
+.card-shadow-1 {
+  box-shadow: var(--box-shadow-1);
+}
+.card-shadow-2 {
+  box-shadow: var(--box-shadow-2);
+}
+.card-shadow-3 {
+  box-shadow: var(--box-shadow-3);
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+h1, h2, h3, h4,h5,h6{
+    margin-top: 6rem;
+    margin-bottom: .75rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.25;
+    color: rgb(17 24 39);
+}
+h1 {
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.25rem;
+}
+h3{
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+p {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 65ch;
+}
+
+.title-bar {
+    background-color: hsla(0, 0%, 95%, 1);
+    border-radius: 5px;
+    margin: 2rem 0;
+    padding: 2rem;
+    box-shadow: 5px 5px oklch(53.18% .28 296.97);
+    text-shadow: 2px 2px hsla(240, 7%, 18%, 1);
+    transform: rotate(.5deg);
+    transition: .1s linear;
+}
+.title-bar h1{
+    color: #f2f2f2;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.title-bar:hover {
+    text-shadow: 4px 4px hsla(238, 8%, 11%, 1);
+    transform: rotate(0);
+}
+
+.secondary-background {
+    color: hsla(0, 0%, 95%, 1);
+    background: linear-gradient(135deg, oklch(53.18% .28 296.97) 0%, oklch(59.91% .239 8.14) 100%);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.grid-item{
+    box-shadow: var(--box-shadow-4);
+    border-radius: .25rem;
+    background-color: var(--color-dark);
+    padding: 1rem;
+    
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+footer{
+    background-color: #2b2b31;
+    padding: 4rem;
+    margin-top: 5rem;
+
+    display: flex;
+    justify-content: space-between;
+}
