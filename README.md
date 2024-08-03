@@ -24,6 +24,15 @@
 
 ## angular features
 
+- [custom-directive]
+- [template-literals]
+- [route-animation-transition]
+- [custom-loading-screen]
+- [let]
+- [constructor]
+- [order-by-pipe]
+
+
 
 
 ## unit testing
@@ -36,6 +45,7 @@
 
 - [store](https://github.com/trilok3003/Tutorials/tree/store)
 - [store-improve-performnace](https://github.com/trilok3003/Tutorials/tree/improve-performance)
+- [navigation-bar]()
 
 
 ## docs
@@ -43,6 +53,11 @@
 - [snippet code]()
 - [tasks ref]()
 - [feature-list]
+- [troubleshooting]
+- [typescript]
+- [wcag]
+- [localize](https://github.com/trilok3003/Tutorials/tree/angular-localize)
+- [ivy](https://github.com/trilok3003/Tutorials/tree/angular-ivy)
 
 ## migration ex/docs
 
