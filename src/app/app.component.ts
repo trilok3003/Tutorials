@@ -26,3 +26,5 @@ export class AppComponent {
  * Conclusion
 So there you go - state management for data loading, error handling, manual retries, data filtering, and pagination all in a little over 100 lines of mostly reactive and declarative code that I think also doesn’t require all that much RxJS knowledge
  */
+
+// https://github.com/joshuamorony/signals-rxjs-demo-fetch/tree/main
