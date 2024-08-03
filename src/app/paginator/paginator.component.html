@@ -1,0 +1,36 @@
+@for (item of page(); track $index) {
+<div class="mb-2 p-2 bg-white rounded shadow-lg">{{ item }}</div>
+}
+
+<div class="flex items-center justify-between mt-8">
+  <div class="inline-flex rounded shadow-lg">
+    @for (size of pageSizes; track $index) {
+    <button
+      (click)="pageSize.set(size)"
+      class="px-3 py-1 text-sm font-medium bg-white border border-gray-200"
+      [class.rounded-s-lg]="$index === 0"
+      [class.rounded-e-lg]="$index === pageSizes.length - 1"
+      [class.font-black]="pageSize() === size"
+    >
+      {{ size }}
+    </button>
+    }
+  </div>
+  <span
+    ><strong>{{ currentPageIndex() + 1 }}</strong> of {{ pageCount() }}</span
+  >
+  <div>
+    <button
+      class="px-2 pb-1 rounded shadow-lg hover:shadow-md bg-white font-bold mr-2"
+      (click)="prev()"
+    >
+      <
+    </button>
+    <button
+      class="px-2 pb-1 rounded shadow-lg hover:shadow-md bg-white font-bold mr-2"
+      (click)="next()"
+    >
+      >
+    </button>
+  </div>
+</div>
