@@ -1,0 +1,15 @@
+<app-search [control]="service.filterControl" />
+<app-list [articles]="service.filteredArticles()" />
+
+<div class="status">
+    <p *ngIf="service.status() === 'loading'">Loading...</p>
+    <div *ngIf="service.status() === 'error'">
+      <p>{{ service.error() }}</p>
+      <button (click)="service.retry$.next()">Retry</button>
+    </div>
+  </div>
+
+  <app-pagination
+  [currentPage]="service.currentPage()"
+  (pageChange)="service.currentPage$.next($event)"
+/>

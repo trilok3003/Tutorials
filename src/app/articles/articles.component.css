@@ -1,0 +1,12 @@
+:host {
+    display: block;
+    background-color: #ecf0f1;
+    padding: 2rem;
+  }
+
+  .status {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    align-items: center;
+  }

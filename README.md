@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## how to
+
+1. Load from api
+2. error handling
+3. loading/success/error states
+4. manual trigger retries
+5. pagination
+6. local filtering
+7. value chanches
+8. 
